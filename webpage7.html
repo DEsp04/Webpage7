@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+ <html lang="en">
+	<head>
+ 		<meta charset="UTF-8">
+		<title>PS 130 Abram Stevens Hewitt</title>
+		<link rel="stylesheet" href="styles/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+
+	<body>
+		<div id="main-content"> <!-- This div is for the entire webpage content. -->
+			<header class="header">
+				<div id="upper-menu"> <!-- Container (flex) -->
+					<h1 id="logo-container"><a href="#"><img src="images/logo2.png" id="logo"></a></h1> <!-- Logo -->
+					<div id="top-menu"> <!-- Top menu -->
+						<ul>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Events</a></li>
+							<li><a href="#">Staffs</a></li>
+							<li><a href="#">Alumni</a></li>
+							<li><a href="#">Remote Learning</a></li>
+							<li><a href="#">Work at PS130</a></li>
+						</ul>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Academic</a></li>
+						<li><a href="#">Students</a></li>
+						<li><a href="#">School Calendar</a></li>
+						<li><a href="#">Parent Corner</a></li>
+					</ul>
+				</nav>
+				<div class="header-2"> <!-- Header pops up when scrolling down the page. Container (flex) -->
+					<div id="container-header-2">
+						<div id="site-name"><a href="#"><img src="images/logo6.png"></a></div>	<!-- logo -->
+
+						<div id="pop-up-header">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Academic</a></li>
+								<li><a href="#">Students</a></li>
+								<li><a href="#">School Calendar</a></li>
+								<li><a href="#">Parent Corner</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="#">Staffs</a></li>
+								<li><a href="#">Alumni</a></li>
+								<li><a href="#">Remote Learning</a></li>
+								<li><a href="#">Work at PS130</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div id="slides-container"> <!-- Carousel/Slides -->
+				<div class="slide fade" id="covid-19"> <!-- Covid-19 -->
+					<div class="slides-content">
+						<h2>COVID-19 - What You Need To Know</h2>
+						<div class="slides-link"><a href="#">Latest Updates</a></div>
+
+					</div>
+				</div>
+
+				<div class="slide fade" id="remote-learning"> <!-- Remote-learning -->
+					<div class="slides-content">
+						<h2>Information on Remote Learning</h2>
+						<div class="slides-link"><a href="#">Learn More</a></div>
+
+					</div>
+
+				</div>
+
+				<div class="slide fade" id="town-hall"> <!-- Town-hall meeting -->
+					<div class="slides-content">
+						<h2>P.S. 130 Town Hall Meeting</h2>
+						<div class="slides-link"><a href="#">Latest Updates</a></div>
+
+					</div>
+				</div>
+
+				<div class="slide fade" id="ps130"> <!-- PS130 -->
+					<div class="slides-content">
+						<h2 id="slide-link-header"><a href="#">Principal Velazquez Announces Strategies to Keep Students Active on Remote Learning</a></h2>
+					</div>
+				</div>
+
+				<div> <!-- Prev, Next buttons -->
+					<a class="prev" onclick="plusSlides(-1)"><p>&#10094;</p></a>
+					<a class="next" onclick="plusSlides(1)"><p>&#10095;</p></a>
+				</div>
+
+				<div id="toggle-circle"> <!-- Toggle Circle -->
+					<ol>
+						<li class="circle" onclick="currentSlide(1)"><li>
+						<li class="circle" onclick="currentSlide(2)"><li>
+						<li class="circle" onclick="currentSlide(3)"><li>
+						<li class="circle" onclick="currentSlide(4)"><li>
+					</ol>
+				</div>
+			</div>
+
+			<div id="academic-intro"> <!-- Academic intro Container (Flex) -->
+				<div id="quote"><h2>Making A Difference</h2></div>
+
+				<div id="academic-details">
+					<p>We pride ourselves in being a culturally rich school, proudly serving diverse students in the bustling South Bronx.</p>
+				</div>
+			</div>
+
+			<div id="academics"> <!-- Academics -->
+				<div class="outer_criterion_header"><h2 class="criteria_header"><a href="#">Academics</a></h2></div>
+				<div id="subjects_container"> <!-- Container (flex) -->
+					<div id="phonics" class="subjects"> <!-- Phonics -->
+					  <a href="#" class="subject-link">
+						<div class="image_container"> <!-- image -->
+							<img src="images/spire.jpeg">
+						</div>
+						<div class="subject_title"> <!-- Subject Title -->
+							<h3>Phonics</h3>
+						</div>
+					  </a>
+					</div>
+
+					<div id="literacy" class="subjects"> <!-- Literacy -->
+					  <a href="#" class="subject-link">
+						<div class="image_container"> <!-- image -->
+							<img src="images/core_ready.jpg">
+						</div>
+						<div class="subject_title"> <!-- Subject Title -->
+							<h3>Literacy</h3>
+						</div>
+					  </a>
+					</div>
+
+					<div id="math" class="subjects"> <!-- Math -->
+					  <a href="#" class="subject-link">
+						<div class="image_container"> <!-- image -->
+							<img src="images/envision_math.jpg">
+						</div>
+						<div class="subject_title"> <!-- Subject Title -->
+							<h3>Math</h3>
+						</div>
+					  </a>
+					</div>
+
+					<div id="social_studies" class="subjects"> <!-- Social Studies -->
+					  <a href="#" class="subject-link">
+						<div class="image_container"> <!-- image -->
+							<img src="images/social_studies.jpg">
+						</div>
+						<div class="subject_title"> <!-- Subject Title -->
+							<h3>Social Studies</h3>
+						</div>
+					  </a>
+					</div>
+
+					<div id="science" class="subjects"> <!-- Science -->
+					  <a href="#" class="subject-link">
+						<div class="image_container"> <!-- image -->
+							<img src="images/science.jpg">
+						</div>
+						<div class="subject_title"> <!-- Subject Title -->
+							<h3>Science</h3>
+						</div>
+					  </a>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="news"> <!-- News -->
+				<div class="outer_criterion_header"><h2 class="criteria_header"><a href="#">News</a></h2></div>
+				<div id="news_sections-container">
+					<div id="news_sections">
+						<select class="select-box">
+							<option value="all">All News</option>
+							<option value="school">School News</option>
+							<option value="athletic">Athletic</option>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="all box fade_news"> <!-- All news -->
+					<div class="new_category"> <!-- All container -->
+						<article> <!-- container(flex) -->
+						  <a href="#">
+							<div class="news-image-container"><img src="images/laptops.jpg"></div>
+							<div class="normal">
+								<h3 class="article-title-text">DOE Is Lending 300,000 Internet-enabled Computers to Keep Students Connected and Able to Learn from Home</h3>					</div>
+						  	<div class="hover">
+								<h3 class="article-title-text">DOE Is Lending 300,000 Internet-enabled Computers to Keep Students Connected and Able to Learn from Home</h3>					</div>
+						  </a>
+						</article>
+
+						<article>
+						  <a href="#">
+							<div class="news-image-container"><img src="images/lunch.jpg"></div>
+							<div class="normal">
+								<h3 class="article-title-text">The New York City Department of Education is Committed to Making Free Meals Available Daily for Any New Yorker</h3>
+							</div>
+							<div class="hover">
+								<h3 class="article-title-text">The New York City Department of Education is Committed to Making Free Meals Available Daily for Any New Yorker</h3>
+						  </a>
+						</article>
+
+						<article>
+						  <a href="#">
+							<div class="news-image-container"><img src="images/bookstore.jpg"></div>
+							<div class="normal">
+								<h3 class="article-title-text">Principal Velazquez Announced Students Now Have Access to P.S. 130 E-Library</h3>
+							</div>
+							<div class="hover">
+								<h3 class="article-title-text">Principal Velazquez Announced Students Now Have Access to P.S. 130 E-Library</h3>
+							</div>
+						  </a>
+						</article>
+					</div>
+				</div>
+
+				<div class="school box fade_news"> <!-- School News -->
+					<div class="new_category"> <!-- All container -->
+						<article> <!-- container(flex) -->
+						  <a href="#">
+							<div class="news-image-container"><img src="images/130piano.jpg" alt="Piano"></div>
+							<div class="normal">
+								<h3 class="article-title-text">The First Year Foundation is Donating Two Colored Pianos to Our School Community</h3>
+							</div>
+						  	<div class="hover">
+								<h3 class="article-title-text">The First Year Foundation is Donating Two Colored Pianos to Our School Community</h3>
+							</div>
+						  </a>
+						</article>
+
+						<article>
+						  <a href="#">
+							<div class="news-image-container"><img src="images/Honor_roll.jpg" alt="Honor Roll"></div>
+							<div class="normal">
+								<h3 class="article-title-text">P.S. 130 Honor Society, Despite Remote Learning, is Still on Top</h3>
+							</div>
+							<div class="hover">
+								<h3 class="article-title-text">P.S. 130 Honor Society, Despite Remote Learning, is Still on Top</h3>
+							</div>
+						  </a>
+						</article>
+
+						<article>
+						  <a href="#">
+							<div class="news-image-container"><img src="images/harry_potter_day.jpg" alt="Harry Potter Day"></div>
+							<div class="normal">
+								<h3 class="article-title-text">Principal and Staffs are Preparing for Harry Potter Day Game At the End of May to Make Remote Learning Fun</h3>
+							</div>
+							<div class="hover">
+								<h3 class="article-title-text">Principal and Staffs are Preparing for Harry Potter Day Game At the End of May to Make Remote Learning Fun</h3>
+							</div>
+						  </a>
+						</article>
+					</div>
+				</div>
+
+				<div class="athletic box fade_news"> <!-- Athletic -->
+					<div class="new_category"> <!-- All container -->
+						<article> <!-- container(flex) -->
+						  <a href="#">
+							<div class="news-image-container"><img src="images/Basketball.jpg" alt="Basketball"></div>
+							<div class="normal">
+								<h3 class="article-title-text">When Our School Basketball Team Earned Second Place in District 8 Basketball League</h3>
+							</div>
+						  	<div class="hover">
+								<h3 class="article-title-text">When Our School Basketball Team Earned Second Place in District 8 Basketball League</h3>
+							</div>
+						  </a>
+						</article>
+
+						<article>
+						  <a href="#">
+							<div class="news-image-container"><img src="images/running_track.jpeg" alt="Running Track"></div>
+							<div class="normal">
+								<h3 class="article-title-text">Elementary School Coaches Prepare for Post COVID-19 Sports</h3>
+							</div>
+							<div class="hover">
+								<h3 class="article-title-text">Elementary School Coaches Prepare for Post COVID-19 Sports</h3>
+							</div>
+						  </a>
+						</article>
+
+						<article>
+						  <a href="#">
+							<div class="news-image-container"><img src="images/cancelled.jpg" alt="Cancelled"></div>
+							<div class="normal">
+								<h3 class="article-title-text">DOE Chancellor Have Postponed Any Sports Activity Until State Governor Open Public Parks and Outdoor Activities</h3>
+							</div>
+							<div class="hover">
+								<h3 class="article-title-text">DOE Chancellor Have Postponed Any Sports Activity Until State Governor Open Public Parks and Outdoor Activities</h3>
+							</div>
+						  </a>
+						</article>
+					</div>
+				</div>
+			</div>
+
+			<div id="school_campus">
+				<img src="images/ps130building.jpeg" alt="School Campus">
+			</div>
+
+
+		</div>
+
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script src="js/javascript.js"></script>
+	</body>
+ </html>
