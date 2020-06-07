@@ -5,7 +5,7 @@
 		<title>PS 130 Abram Stevens Hewitt</title>
 		<link rel="stylesheet" href="styles/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://kit.fontawesome.com/606dd3ae68.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -24,14 +24,33 @@
 						</ul>
 					</div>
 				</div>
-				<nav>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Academic</a></li>
-						<li><a href="#">Students</a></li>
-						<li><a href="#">School Calendar</a></li>
-						<li><a href="#">Parent Corner</a></li>
+				<nav id="header_nav">
+					<ul id="header_nav_ul">
+						<li class="header_nav_ul_li"><a href="#" class="a_color">Home</a></li>
+						<li class="header_nav_ul_li">
+              <a href="#" class="a_color">About Us</a>
+              <div class="drop-down">         <!-- Drop down #1 -->
+                <ul id="ul_dropdown_1">
+                  <li><a href="#">Principal's Message</a></li>
+                  <li><a href="#">Mission &amp; Vision</a></li>
+                  <li><a href="#">Staff Directory</a></li>
+                  <li><a href="#">Bell Schedule</a></li>
+                </ul>
+              </div>
+            </li>
+						<li class="header_nav_ul_li"><a href="#" class="a_color">Academic</a></li>
+						<li class="header_nav_ul_li">
+              <a href="#" class="a_color">Students</a>
+              <div class="drop-down">             <!-- Drop down #2 -->
+                <ul id="ul_dropdown_2">
+                  <li><a href="#">Google Classroom</a></li>
+                  <li><a href="#">Online Learning Tools</a></li>
+                  <li><a href="#">Food Menu</a></li>
+                </ul>
+              </div>
+            </li>
+						<li class="header_nav_ul_li"><a href="#" class="a_color">School Calendar</a></li>
+						<li class="header_nav_ul_li"><a href="#" class="a_color">Parent Corner</a></li>
 					</ul>
 				</nav>
 				<div class="header-2"> <!-- Header pops up when scrolling down the page. Container (flex) -->
@@ -308,7 +327,159 @@
 				<img src="images/ps130building.jpeg" alt="School Campus">
 			</div>
 
+      <div id="calendar-flex"> <!-- Calendar Container (flex) -->
+        <div id="upcoming-event"> <!-- Upcoming events -->
+          <h2>Upcoming Events</h2>
+          <div id="show_all"><a href="#"><p>Show All</p></a></div>
+        </div>
+        <div id="month-day-time"> <!-- Events Content -->
+          <div id="days-container-outer">
+            <div class="days-container"> <!-- Days Container (flex) -->
+              <div class="days">
+                <div class="days-content">
+                  <h3 class="day-title"><a href="#">Troubleshooting Technology:</a></h3>
+                  <div class="month-day">
+                    <span class="month">May</span>
+                    <span class="day">22</span>
+                  </div>
+                  <div class="time-container"><span>9:00 a.m.</span></div>
+                  <p>Tech Support to Answer All of Your Questions</p>
+                </div>
+              </div>
 
+              <div class="days">
+                <div class="days-content">
+                  <h3 class="day-title" id="memorial">Memorial Day</h3>
+                  <div class="month-day">
+                    <span class="month">May</span>
+                    <span class="day">25</span>
+                  </div>
+                  <div class="time-container"><span>Holiday</span></div>
+                  <img src="images/memorial_day.png" alt="Memorial Day Ribbon" id="memorial-ribbon">
+                  <p>Schools CLosed</p>
+                </div>
+              </div>
+
+              <div class="days">
+                <div class="days-content">
+                  <h3 class="day-title"><a href="#">Parent Engagement:</a></h3>
+                  <div class="month-day">
+                    <span class="month">May</span>
+                    <span class="day">26</span>
+                  </div>
+                  <div class="time-container"><span>10:00 a.m.</span></div>
+                  <p>Mental and Physical Well being With Mr.G</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="days-container"> <!-- Days Container (flex) -->
+              <div class="days">
+                <div class="days-content">
+                  <h3 class="day-title"><a href="#">Parent Engagement:</a></h3>
+                  <div class="month-day">
+                    <span class="month">May</span>
+                    <span class="day">27</span>
+                  </div>
+                  <div class="time-container"><span>10:00 a.m.</span></div>
+                  <p>Science Experiment with Ms. Parra</p>
+                </div>
+              </div>
+
+              <div class="days">
+                <div class="days-content">
+                  <h3 class="day-title"><a href="#">District 8 Reading Workshop:</a></h3>
+                  <div class="month-day">
+                    <span class="month">May</span>
+                    <span class="day">28</span>
+                  </div>
+                  <div class="time-container"><span>11:00 a.m.</span></div>
+                  <p>"Parents Guide to Students Sucess" by Ms. Sine</p>
+                </div>
+              </div>
+
+              <div class="days">
+                <div class="days-content">
+                  <h3 class="day-title"><a href="#">Show your PS 130 Pride:</a></h3>
+                  <div class="month-day">
+                    <span class="month">May</span>
+                    <span class="day">29</span>
+                  </div>
+                  <div class="time-container"><span>8:10 a.m.</span></div>
+                  <p>Wear your Tiger Gear or wear your maroon and grey attire!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+
+     <footer>
+       <div id="upper-footer"> <!-- flex -->
+         <div class="f_menu">
+           <nav class="f_nav">
+             <ul>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Staff Directory</a></li>
+               <li><a href="#">Accessibility</a></li>
+               <li><a href="#">News</a></li>
+             </ul>
+           </nav>
+         </div>
+         <div class="f_menu">
+           <nav class="f_nav">
+             <ul>
+               <li><a href="#">Plan a Visit</a></li>
+               <li><a href="#">School Map</a></li>
+               <li><a href="#">Bus Information</a></li>
+               <li><a href="#">School Safety</a></li>
+             </ul>
+           </nav>
+         </div>
+         <div class="f_menu">
+           <nav class="f_nav">
+             <ul>
+               <li><a href="#">Library</a></li>
+               <li><a href="#">Events</a></li>
+               <li><a href="#">School Calendar</a></li>
+               <li><a href="#">Online Tools</a></li>
+             </ul>
+           </nav>
+         </div>
+         <div class="f_menu">
+           <nav class="f_nav">
+             <ul>
+               <li><a href="#"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i><span>Facebook</span></a></li>
+               <li><a href="#"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i><span>Twitter</span></a></li>
+               <li><a href="#"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i><span>Instagram</span></a></li>
+               <li><a href="#"><i class="fab fa-youtube fa-lg" aria-hidden="true"></i><span>Youtube</span></a></li>
+             </ul>
+           </nav>
+         </div>
+       </div>
+
+       <div id="lower-footer">
+         <div class="lf-items"> <!-- Title -->
+           <p>&copy; Abraham Stevens Hewitt</p>
+         </div>
+
+         <div class="lf-items" id ="lf-items-center"> <!-- <address -->
+           <span>750 Prospect Avenue</span>
+           <span>Bronx, NY 10455</span>
+         </div>
+
+         <div class="lf-items" id="lf-items-right">
+           <ul>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Site Map</a></li>
+           </ul>
+         </div>
+       </div>
+     </footer>
 		</div>
 
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

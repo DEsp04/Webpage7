@@ -4,30 +4,30 @@
 
 
 
-  
-$(window).scroll(function() {  
+
+$(window).scroll(function() {
 		var header = $(document).scrollTop(); /*calculate the height from beginning of page to where ever you stop scrolling */
 
 		var headerHeight = $(".header").outerHeight(); /*calculate main header height */
 
 /* If scrolling of page is greater than height of main header, then sticky nav will pop up*/
-		if(header > headerHeight) { 
+		if(header > headerHeight) {
 			$(".header-2").addClass("show-fixed");
 			} else {
-			$(".header-2").removeClass("show-fixed");	
+			$(".header-2").removeClass("show-fixed");
 			}
 
-}); 
+});
 
- 
+
 
 
 
 /* This is to keep the sticky nav to appear when page is refreshed. Each time the window is loaded, this function will allow jQuery to be executed, even when used reloads the page multiple times. */
 
-$(window).on("load", function() {  
+$(window).on("load", function() {
     $(window).scroll(sticky_nav_scroll());
-    sticky_nav(); // Force the first call on refresh 
+    sticky_nav_scroll(); // Force the first call on refresh
 });
 
 
@@ -70,11 +70,11 @@ function showSlides(n) {
 	if (n == undefined) {
 		n = ++slideIndex
 	}
-	
+
 	if (n > slides.length) {
 		slideIndex = 1
-	}	
-	
+	}
+
 	if (n < 1){
 		slideIndex = slides.length
 	}
@@ -88,7 +88,7 @@ function showSlides(n) {
 	}
 
 	slides[slideIndex-1].style.display = "block";
-	
+
 	circles[slideIndex-1].className += " active";
 
 	timer = setTimeout(showSlides, 16000);
@@ -107,63 +107,8 @@ $(document).ready(function(){
 				$(".box").not("." + optionValue).hide();
 				$("." + optionValue).show();
 			} else {
-				$(".box").hide();	
-			  }		
+				$(".box").hide();
+			  }
 		});
 	}).change();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

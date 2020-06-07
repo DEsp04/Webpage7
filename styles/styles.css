@@ -1,7 +1,8 @@
 
 body {
-	font-family: 'Open Sans', sans-serif; 
+	font-family: 'Open Sans', sans-serif;
 	margin: 0px;
+	padding: 0px;
 }
 
 
@@ -12,17 +13,18 @@ body {
 }
 
 header {
+	width: 100%;
 	background-color: #f8f8f8c7;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 3; 
+	z-index: 3;
 }
 
 #upper-menu {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;	
+	width: 100%;
 }
 
 #logo-container {
@@ -64,36 +66,53 @@ header {
 	text-decoration: underline;
 }
 
-nav {
+#header_nav {
 	margin: 0;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 }
 
-nav ul {
-	width: 850px;
+#header_nav_ul {
+	width: 100%;
 	display: flex;
 	list-style-type: none;
-	padding: 15px 0;
 	margin: 0;
-	margin-right: 2%;
-}
-
-nav ul li {
-	margin-left: 4%;
-}
-
-nav ul a {
-	text-decoration: none;
-	color: #8b0000;
+  margin-right: 2%;
+	justify-content: flex-end;
 	font-size: 22px;
+	padding: 0;
+}
+
+.header_nav_ul_li {
+	/* margin: 0 1%; */
+	position: relative;
+}
+
+#header_nav_ul a {
+	text-decoration: none;
+}
+
+.a_color {
+	color: #8b0000;
+	font-weight: 700;
+	display: block;
+ 	padding: 14px 14px;
+	box-shadow: 0;
+	transition: background-color 0.3s ease-in-out;
+	transition: box-shadow 0.1s ease-in-out;
+}
+
+.a_color:hover, .header_nav_ul_li:hover .a_color { /* When we point at any list item from the dropdrown, this allows the nav bar li to be highlighted */
+	background-color: #f8f8f8;
+	box-shadow: inset 0px 3px black;
 }
 
 .header-2 {
 	display: none;
 	width: 100%;
 	background-color: #f8f8f8c7;
+	z-index: 100;
 }
 
 .show-fixed {
@@ -103,6 +122,55 @@ nav ul a {
 	height: 65px;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2)
 }
+
+/* Drop down*/
+
+.drop-down {
+	visibility: hidden; /* this hides the dropdown */
+	opacity: 0; /* The content is transparent */
+	min-width: 14rem;
+	position: absolute;
+	z-index: 1;
+	box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.2);
+	transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.drop-down ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+}
+
+.drop-down ul li {
+	margin: 0;
+
+}
+
+.drop-down li a {
+	font-weight: 700;
+	font-size: 16px;
+	color: #0b4452;
+	display: block;
+	padding: 10% 12%;
+}
+
+.drop-down li a:hover {
+	color: white;
+	background-color: black;
+}
+
+#ul_dropdown_1 li:nth-child(-n+3), #ul_dropdown_2 li:nth-child(-n+2){
+	border-bottom: 1px #80808047 solid;
+}
+
+
+.header_nav_ul_li:hover .drop-down {
+	visibility: visible; /*this show the dropdown*/
+	opacity: 1;
+	transition-delay: 0s, 0s, 0.3s;  /* this removes the transition delay so the menu will be visible while the other styles transition. Each number represent the time delay on the transition: all, visibility, and z-index properties. */
+}
+
  /* pop-up header and fixed when scrolling down */
 
 #container-header-2 {
@@ -118,19 +186,22 @@ nav ul a {
 }
 
 #site-name img {
-	width: 50px; 
+	width: 50px;
 	height: 61px;
 }
 
 #pop-up-header {
 	width: 90%;
+
 }
 
 #pop-up-header ul {
 	display: flex;
+	justify-content: flex-end;
 	list-style-type: none;
 	padding: 0;
 	margin: 2% 0;
+	margin-right: 7%;
 }
 
 #pop-up-header ul li {
@@ -149,7 +220,7 @@ nav ul a {
 }
 
 #pop-up-header ul li:nth-child(-n+6) a {
-	font-weight: 900;	
+	font-weight: 900;
 }
 
 
@@ -196,10 +267,9 @@ nav ul a {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-position: center center; 
+	background-position: center center;
 	position: relative;
 }
-
 
 .slides-content {
 	width: 75%;
@@ -217,6 +287,7 @@ nav ul a {
 	font-size: 2.5em;
 	font-weight: 500;
 	margin-bottom: 40px;
+	cursor: default;
 }
 
 .slides-link {
@@ -277,7 +348,7 @@ nav ul a {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);	
+	transform: translate(-50%, -50%);
 }
 
 /* Style for toggle circles */
@@ -318,7 +389,7 @@ nav ul a {
 }
 
 @keyframes fade {
-	from {opacity: .7} 
+	from {opacity: .7}
 	to {opacity: 1}
 }
 
@@ -347,13 +418,12 @@ nav ul a {
 	font-size: 2.4em;
 	position: relative;
 	margin: 0;
-	
 }
 
 #quote h2::before {	/* Division line */
-	content: ""; 
+	content: "";
 	position: absolute;
-	height: 112px;  
+	height: 112px;
 	width: 6px;
 	background-color: black;
 	right: 0;
@@ -365,13 +435,12 @@ nav ul a {
 	font-style: italic;
 	font-size: 1.3em;
 	color: #626262;
-	width: 50%; 
+	width: 50%;
 	padding-left: 4%;
 }
 
 #academic-details p {
 	margin: 0;
-
 }
 
 .outer_criterion_header {
@@ -383,12 +452,10 @@ nav ul a {
 .outer_criterion_header a {
 	text-decoration: none;
 	color: #f63c21;
-	
 }
 
 .outer_criterion_header a:hover {
 	color: #626264;
-	
 }
 
 #subjects_container {
@@ -439,7 +506,7 @@ nav ul a {
 .subject_title h3 {
 	font-size: 1.4em;
 	max-width: 100%;
-	margin: 0;	
+	margin: 0;
 	color: white;
 	text-align: center;
 	font-weight: 300;
@@ -460,7 +527,6 @@ nav ul a {
 #news_sections-container {
 	width: 100%;
 	height: 36px;
-
 }
 
 #news_sections {
@@ -521,7 +587,6 @@ nav ul a {
 
 .select-box:focus {
   	outline: 0;
-  	
 }
 
 .box {
@@ -537,16 +602,16 @@ nav ul a {
 
 article {
 	width: 33.33%;
-	position: relative; 
+	position: relative;
 }
 
 .news-image-container {
 	width: 100%;
-    	background: linear-gradient(to top, #3a3939e8 1%, #3a3939e8 2%, transparent 80%);	
+    	background: linear-gradient(to top, #3a39396b 1%, #3a393973 2%, transparent 80%);
 }
 
 .news-image-container img{
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	display: block;
 	margin: 0;
@@ -577,7 +642,6 @@ article .hover {
 	opacity: 0;
 	transition: .3s ease;
 	background-color: #0b4452e0;
-	
 }
 
 article:hover .hover {
@@ -598,7 +662,7 @@ article:hover .normal {
 }
 
 @keyframes fade {
- 	from {opacity: .4} 
+ 	from {opacity: .4}
 	to {opacity: 1}
 }
 
@@ -607,12 +671,11 @@ article:hover .normal {
 	height: auto;
 	background-color: #00000026;
 	margin: 2% 0 0;
-
 }
 
 #school_campus img {
 	width: 100%;
-	height: auto; 
+	height: auto;
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -620,6 +683,223 @@ article:hover .normal {
 	z-index: -1;
 }
 
+/* Calendar */
+#calendar-flex {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 2rem
+}
+
+#upcoming-event {
+	width: 15%;
+	font-family: Roboto Slab, Times, serif;
+	color: #f63c21;;
+}
+
+#upcoming-event h2 {
+	padding: 12% 12% 7% 2%;
+  font-size: 2.5em;
+}
+
+#show_all {
+	float: left;
+	width: 60%
+}
+
+#show_all p {
+	padding: 15% 0%;
+	color: #0b4452;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	border: black 2px solid;
+	transition: .3s ease;
+}
+
+#show_all a {
+	text-decoration: none;
+}
+
+#show_all p:hover {
+	color: white;
+	background-color: black;
+}
 
 
+#month-day-time {
+	width: 70%;
+}
 
+#days-container-outer {
+	padding-top: 10%;
+}
+
+.days-container {
+	width: 100%;
+	display: flex;
+	position: relative;
+}
+
+.days {
+	width: inherit;
+	position: relative;
+}
+
+.days-content {
+	padding: 3% 8% 8% 25%;
+}
+
+.days-content h3 {
+	font-size: 1.1em;
+}
+
+.days-content a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.days-content a:hover {
+	text-decoration: underline;
+}
+
+.month-day {
+	position: absolute;
+	top: 3%;
+	left: 0;
+	border: solid #626262 2px;
+  border-radius: 50%;
+	padding: 2% 3%
+}
+
+.time-container {
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+.month, .day {
+	display: block;
+}
+
+.month {
+	color: #8b0000;
+	font-size: 1.5em;
+}
+
+.day {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#memorial {
+	color: red;
+	cursor: default;
+}
+
+#memorial-ribbon {
+    width: 15%;
+    display: inline-block;
+    margin: 1em 0%;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	background-color: #8b0000;
+	border-top: black 6px solid;
+}
+
+#upper-footer {
+	display: flex;
+	justify-content: center;
+	padding: 4% 6% 2%;
+	color: white;
+}
+
+.f_menu {
+	flex: 1; /* This will help the flex-items be evenly spaced out */
+}
+
+.f_nav {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.f_nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+.f_nav ul li {
+	padding-bottom: 11%;
+}
+
+.f_nav a {
+	text-decoration: none;
+	justify-content: space-between;
+	color: white;
+	font-weight: bolder;
+}
+
+.f_nav a:hover {
+	color: #ffd485;
+}
+
+.f_nav a i {
+	width: 15%;
+	margin-right: 8%;
+}
+
+#lower-footer {
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	background-color: #5d0902;
+	padding: 2rem 0;
+	font-size: 0.8em;
+}
+
+.lf-items {
+	width:30%;
+}
+
+.lf-items ul, p {
+	margin: 0;
+}
+
+#lf-items-right  {
+	text-align: end;
+	margin-left: 6%;
+}
+
+#lf-items-center {
+	text-align: center;
+}
+
+#lf-items-right ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0;
+}
+
+#lf-items-right ul li:nth-last-child(-n+2) {
+	border-left: white solid 2px;
+	padding-left: 2%;
+	margin-left: 2%;
+}
+
+#lf-items-right ul li:nth-last-child(-n+2) {
+
+}
+
+#lf-items-right a {
+	color: white;
+	text-decoration: none;
+}
+
+#lf-items-right a:hover {
+	color: #ffd485;
+}
