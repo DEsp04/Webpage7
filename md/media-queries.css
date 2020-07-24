@@ -1,0 +1,690 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+	#upper-menu {
+    align-items: center;
+  }
+
+  #top-menu {
+    width: 8%;
+  }
+
+  #top-menu ul {
+    display: none;
+  }
+
+  #header_nav {
+    display: none;
+  }
+
+  #container-header-2 {
+    align-items: center;
+  }
+
+  #site-name img {
+    width: 40px;
+    height: 51px;
+  }
+
+  #pop-up-header {
+    display: none;
+  }
+
+  .hamburger {
+    margin: 1.4rem 0;
+    margin-right: 2.25rem;
+    font-size: 5.2vw;
+  }
+
+  .hamburger:hover {
+    color: #f63c21;
+  }
+
+  /* Carousel */
+
+  #slides-container {
+    height: 385px;
+  }
+
+  .slides-content h2 {
+    font-size: 1.6em;
+  }
+
+  #slides-container div:nth-child(5) {
+    display: none;
+  }
+
+  .slides-link a {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  #toggle-circle {
+    top: 90%;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+  }
+
+  /*School's quote*/
+
+  #academic-intro {
+    width: 100%;
+  }
+
+  #quote h2 {
+    font-size: 6vw;
+  }
+
+  #quote h2::before {
+    height: 120%;
+  }
+
+  #academic-details {
+    font-size: 3.15vw;
+  }
+
+  /*Academics*/
+
+  .criteria_header {
+    font-size: 1.5em;
+  }
+
+  #subjects_container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subjects {
+    width: 150px;
+  }
+
+  #phonics, #literacy, #math, #social_studies {
+    margin-bottom: 2%;
+  }
+
+  /* News */
+
+  #news_sections {
+    width: 151px;
+  }
+
+  .new_category {
+    flex-direction: column;
+  }
+
+  article {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .article-title-text {
+    font-size: 3.4vw;
+  }
+
+	#news_sections {
+	    width: 28%;
+	}
+
+	#news_sections .select-box{
+		font-size: 2.5vw;
+		padding: 5% 6%;
+	}
+
+  /* Calendar */
+
+  #calendar-flex {
+    flex-direction: column;
+  }
+
+  #upcoming-event {
+    width: 100%;
+  }
+
+  #upcoming-event h2 {
+    padding: 0;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 11px 0;
+  }
+
+  .show_all {
+    width: 16%;
+    margin-left: 2%;
+  }
+
+  #show_all_top {
+    display: none;
+  }
+
+  #month-day-time {
+    width: 100%;
+    font-size: 2.5vw;
+  }
+
+  #days-container-outer {
+    display: none;
+  }
+
+  .days-container {
+    flex-direction: column-reverse;
+  }
+
+  .days {
+    width: 79%;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+
+  #upper-footer {
+    font-size: 2vw;
+    padding: 4% 0% 2%;
+  }
+
+  .f_nav {
+  	width: 80%;
+  	margin: 0 auto;
+  }
+
+  #lower-footer {
+    font-size: 1.9vw;
+		display: block;
+  }
+
+  .lf-items {
+  	width: 50%;
+    margin: 0 auto;
+  }
+
+  #lf-items-left {
+  	float: none;
+    text-align: center;
+  }
+
+  #lf-items-right  {
+  	text-align: inherit;
+  	margin-left: auto;
+  	float: none;
+  }
+
+  #lf-items-center {
+  	text-align: center;
+  	float: none;
+  }
+
+  #lf-items-right ul {
+    justify-content: center;
+    padding: 0;
+  }
+
+  #lf-items-right ul li:nth-child(1) {
+		width: 20%;
+  }
+
+  #lf-items-right ul li:nth-child(2) {
+		width: 28%;
+  }
+
+  #lf-items-right ul li:nth-child(3) {
+    width: 19%;
+  }
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+	#upper-menu {
+		align-items: center;
+	}
+
+	#top-menu {
+		width: 8%;
+	}
+
+	#top-menu ul {
+		display: none;
+	}
+
+	#header_nav {
+		display: none;
+	}
+
+	#pop-up-header {
+		display: none;
+	}
+
+	.hamburger {
+		margin: 1.4rem 0;
+		margin-right: 2.25rem;
+		font-size: 28px;
+	}
+
+	.hamburger:hover {
+		color: #f63c21;
+		cursor: pointer;
+	}
+
+	#container-header-2 {
+		align-items: center;
+	}
+
+	/* Carousel */
+
+	#slides-container {
+    height: 385px;
+  }
+
+	.slides-content h2 {
+		font-size: 4.3vw;
+	}
+
+	#slides-container div:nth-child(5) {
+		display: none;
+	}
+
+	.slides-link a {
+		font-size: 3.3vw;
+		padding: 2% 4%;
+	}
+
+	#toggle-circle {
+    top: 90%;
+  }
+
+	.circle {
+		width: 14px;
+		height: 14px;
+		margin: 0 4.5px;
+	}
+
+	/*School Quote*/
+
+	#academic-intro {
+    width: 100%;
+  }
+
+	#quote {
+    width: 38%;
+	}
+
+	#quote h2 {
+	font-size: 3.6vw;
+	text-align: center;
+	}
+
+	#quote h2::before {
+		height: 77px;
+	}
+
+	#academic-details {
+		font-size: 1.68vw;
+	}
+
+	/*Academics*/
+
+	.criteria_header {
+		font-size: 1.5em;
+	}
+
+	#subjects_container {
+		/*max-width: 100%;*/
+		width: 64%;
+		/*display: flex;*/
+		flex-wrap: wrap;
+		padding: 2% 0 0;
+		/*justify-content: space-around;*/
+	}
+
+	.subjects {
+		/* width: 160.4px; */
+		margin: 1% 1%;
+		width: 181px;
+	}
+
+	  /* News */
+		.new_category {
+	    flex-direction: column;
+			width: 84%;
+			margin: auto;
+	  }
+
+		article {
+			width: 70%;
+			margin: 0 auto;
+		}
+
+		#news_sections {
+			width: 151px;
+		}
+
+		.article-title-text {
+	    font-size: 3.05vw;
+	  }
+
+
+	/* Calendar */
+
+	#show_all_bottom {
+		display: none;
+	}
+
+	#upcoming-event h2 {
+    font-size: 3.8vw;
+	}
+
+	.show_all p {
+		font-size: 1.67vw;
+	}
+
+	.month {
+    font-size: 2vw;
+	}
+
+	.day{
+		font-size: 1.7vw;
+	}
+
+	.days-content h3 {
+    font-size: 2vw;
+	}
+
+	.time-container {
+    font-size: 1.5vw;
+}
+
+	.days-content p {
+		font-size: 1.9vw;
+	}
+
+	/* Footer */
+
+	#upper-footer {
+		font-size: 1.28vw;
+	}
+
+	.f_nav {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#lower-footer {
+    font-size: 1.1vw;
+		display: block;
+  }
+
+  .lf-items {
+  	width: 50%;
+    margin: 0 auto;
+  }
+
+  #lf-items-left {
+  	float: none;
+    text-align: center;
+  }
+
+  #lf-items-right  {
+  	text-align: inherit;
+  	margin-left: auto;
+  	float: none;
+  }
+
+  #lf-items-center {
+  	text-align: center;
+  	float: none;
+  }
+
+  #lf-items-right ul {
+    justify-content: center;
+    padding: 0;
+  }
+
+  #lf-items-right ul li:nth-child(1) {
+		width: 13%;
+  }
+
+  #lf-items-right ul li:nth-child(2) {
+		width: 17%;
+  }
+
+  #lf-items-right ul li:nth-child(3) {
+    width: 12%;
+  }
+
+}
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+	/* Carousel */
+
+	#slides-container {
+		height: 722px;
+	}
+
+	.slides-content h2 {
+		font-size: 2.3em;
+	}
+
+	.slides-link a {
+    font-size: 1.8em;
+    padding: 20px 30px;
+  }
+
+	#toggle-circle {
+		top: 83%;
+	}
+
+	.circle {
+		width: 18px;
+		height: 18px;
+		margin: 0 6px;
+	}
+
+	/* School's quote */
+
+	.criteria_header {
+		font-size: 1.7em;
+	}
+
+	#subjects_container {
+		width: 80%;
+	}
+
+	/* News */
+
+	/* Footer */
+
+	#lower-footer {
+		font-size: 1.1vw;
+		display: flex;
+	}
+
+	.lf-items {
+		width: 30%;
+		/*margin: 0 auto;*/
+	}
+
+	#lf-items-left {
+		float: none;
+		text-align: left;
+	}
+
+	#lf-items-right  {
+		text-align: center;
+		margin-left: auto;
+		float: left;
+	}
+
+	#lf-items-center {
+		text-align: center;
+		float: none;
+	}
+
+	#lf-items-right ul {
+		justify-content: flex-end;
+		padding: 0;
+	}
+
+	#lf-items-right ul li:nth-child(1) {
+		width: 20%;
+	}
+
+	#lf-items-right ul li:nth-child(2) {
+		width: 26%;
+	}
+
+	#lf-items-right ul li:nth-child(3) {
+		width: 20%;
+	}
+
+
+
+}
+
+
+/* Large devices (laptops/desktops, 882px and up) */
+
+@media only screen and (min-width: 882px) {
+	#upper-menu {
+		align-items: end;
+	}
+
+	#top-menu {
+		width: 56%;
+	}
+
+	#top-menu ul {
+		display: flex;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	#hamburger1 {
+		display: block;
+	}
+
+	#header_nav {
+		display: block;
+	}
+
+	/* Carousel*/
+
+	#slides-container div:nth-child(5) {
+		display: block;
+	}
+
+	.slides-link a {
+    font-size: 1.8em;
+    padding: 20px 30px;
+  }
+
+	/* School's Quote */
+
+	/* Academics */
+	.criteria_header {
+		font-size: 1.9em;
+	}
+
+	#subjects_container {
+	/*	flex-wrap: no-wrap; */
+		width: 74%;
+
+	}
+
+	/* News */
+
+	.new_category {
+		flex-direction: inherit;
+		width: 95%;
+	}
+
+	article {
+		width: 33.33%;
+		position: relative;
+	}
+
+	.article-title-text {
+		font-size: 1.7vw;
+	}
+
+
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+
+	#hamburger1 {
+    display: none;
+  }
+
+  #pop-up-header {
+    display: block;
+    width: 92%;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+	/* School's Quote */
+
+	#academic-intro {
+		width: 1050px;
+	}
+
+	#quote h2 {
+		font-size: 2.4em;
+	}
+
+	#quote h2::before {
+		height: 112px;
+	}
+
+	#academic-details {
+		font-size: 1.3em;
+	}
+
+	/* Academics */
+
+	.criteria_header {
+		font-size: 2.1;
+	}
+
+	#subjects_container {
+		flex-wrap: no-wrap;
+		width: 90%;
+
+	}
+
+	.subjects {
+		flex: 1;
+
+	}
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+
+@media only screen and (min-width: 1400px) {
+
+}

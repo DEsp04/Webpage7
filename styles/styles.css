@@ -1,4 +1,12 @@
 
+html {
+	box-sizing: border-box; /* This will allow us to keep the border and padding contain in the content of the element. With out box-sizing the elements with different width will come out of the parent element stretching the page and making uncontainable. */
+}
+
+*, *::before, *::after {
+	box-sizing: inherit; /* This will take any of the elements, including psedo-elements, and apply the border-box value to the box-sizing. Remember this is being inherited from the <html> element. *(means the universal CSS selector) */
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0px;
@@ -120,7 +128,7 @@ header {
 	position: fixed;
 	top: 0;
 	height: 65px;
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2)
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Drop down*/
@@ -144,7 +152,6 @@ header {
 
 .drop-down ul li {
 	margin: 0;
-
 }
 
 .drop-down li a {
@@ -160,7 +167,7 @@ header {
 	background-color: black;
 }
 
-#ul_dropdown_1 li:nth-child(-n+3), #ul_dropdown_2 li:nth-child(-n+2){
+#ul_dropdown_1 li:nth-child(-n+3), #ul_dropdown_2 li:nth-child(-n+2) {
 	border-bottom: 1px #80808047 solid;
 }
 
@@ -178,9 +185,11 @@ header {
 	justify-content: space-between;
 	width: 100%;
 	background-color: #f8f8f8;
+	margin: 0;
+  padding: 0;
 }
 
-#site-name{
+#site-name {
 	width: 5%;
 	margin-left: 2%;
 }
@@ -192,7 +201,6 @@ header {
 
 #pop-up-header {
 	width: 90%;
-
 }
 
 #pop-up-header ul {
@@ -201,7 +209,7 @@ header {
 	list-style-type: none;
 	padding: 0;
 	margin: 2% 0;
-	margin-right: 7%;
+	margin-right: 6%;
 }
 
 #pop-up-header ul li {
@@ -254,7 +262,6 @@ header {
 
 #ps130 {
 	background-image: url(../images/auditorium.jpeg);
-
 }
 
 /* This selector will also be use for javascript */
@@ -263,7 +270,7 @@ header {
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
-	background-size: cover;     / We going to use this for media-query *100% 100%*/
+	background-size: cover;     /*  We going to use this for media-query *100% 100% */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -356,8 +363,8 @@ header {
 #toggle-circle {
 	position: absolute;
 	top: 83%;
-    	left: 50%;
-    	transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #toggle-circle ol {
@@ -368,7 +375,7 @@ header {
 
 .circle {
 	height: 18px;
-  	width: 18px;
+  width: 18px;
 	background-color: #f8f8f8a1;
 	margin: 0 6px;
 	border-radius: 50%;
@@ -389,8 +396,12 @@ header {
 }
 
 @keyframes fade {
-	from {opacity: .7}
-	to {opacity: 1}
+	from {
+		opacity: .7;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 /* Academic Intro */
@@ -459,11 +470,11 @@ header {
 }
 
 #subjects_container {
-	width: 1100px;
+	width: 90%;
 	margin: 0 auto;
 	height: auto;
 	display: flex;
-	justify-content: space-between;
+	/*flex-wrap: wrap;*/
 	padding: 2% 0 0;
 }
 
@@ -477,7 +488,7 @@ header {
 }
 
 .subjects {
-	width: 15%;
+/* 150px */
 }
 
 .image_container {
@@ -485,7 +496,7 @@ header {
 }
 
 .subjects img {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	display: block;
 	margin: 0;
@@ -493,7 +504,7 @@ header {
 	transition: transform .2s ease-out;
 }
 
-.subjects:hover img  {
+.subjects:hover img {
 	transform: scale(1.1);
 }
 
@@ -504,7 +515,7 @@ header {
 }
 
 .subject_title h3 {
-	font-size: 1.4em;
+	font-size: 2.1vw;
 	max-width: 100%;
 	margin: 0;
 	color: white;
@@ -607,10 +618,10 @@ article {
 
 .news-image-container {
 	width: 100%;
-    	background: linear-gradient(to top, #3a39396b 1%, #3a393973 2%, transparent 80%);
+  background: linear-gradient(to top, #3a39396b 1%, #3a393973 2%, transparent 80%);
 }
 
-.news-image-container img{
+.news-image-container img {
 	width: 100%;
 	height: auto;
 	display: block;
@@ -620,7 +631,7 @@ article {
 	z-index: -1;
 }
 
-article .article-title-text {
+.article-title-text {
 	position: absolute;
  	top: 70%;
 	left: 50%;
@@ -629,9 +640,10 @@ article .article-title-text {
 	width: 90%;
 	margin: 0;
 	font-family: Roboto Slab, Times, serif;
-	font-size: 1.4em;
+	/*font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1400 - 600)));*/
 	font-weight: 500;
 	line-height: 1.1em;
+	z-index: 1;
 }
 
 article .hover {
@@ -652,18 +664,18 @@ article .normal {
 	transition: .3s ease;
 }
 
-article:hover .normal {
-	opacity: 0;
-}
-
 .fade_news {
 	animation-name: fade;
 	animation-duration: 1.5s;
 }
 
 @keyframes fade {
- 	from {opacity: .4}
-	to {opacity: 1}
+ 	from {
+		opacity: .4;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 #school_campus {
@@ -688,13 +700,13 @@ article:hover .normal {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	padding-bottom: 2rem
+	padding-bottom: 2rem;
 }
 
 #upcoming-event {
 	width: 15%;
 	font-family: Roboto Slab, Times, serif;
-	color: #f63c21;;
+	color: #f63c21;
 }
 
 #upcoming-event h2 {
@@ -702,12 +714,12 @@ article:hover .normal {
   font-size: 2.5em;
 }
 
-#show_all {
+.show_all {
 	float: left;
-	width: 60%
+	width: 60%;
 }
 
-#show_all p {
+.show_all p {
 	padding: 15% 0%;
 	color: #0b4452;
 	text-align: center;
@@ -717,15 +729,14 @@ article:hover .normal {
 	transition: .3s ease;
 }
 
-#show_all a {
+.show_all a {
 	text-decoration: none;
 }
 
-#show_all p:hover {
+.show_all p:hover {
 	color: white;
 	background-color: black;
 }
-
 
 #month-day-time {
 	width: 70%;
@@ -770,7 +781,7 @@ article:hover .normal {
 	left: 0;
 	border: solid #626262 2px;
   border-radius: 50%;
-	padding: 2% 3%
+	padding: 2% 3%;
 }
 
 .time-container {
@@ -852,6 +863,8 @@ footer {
 	margin-right: 8%;
 }
 
+/*Lower part of the footer*/
+
 #lower-footer {
 	display: flex;
 	justify-content: space-around;
@@ -862,20 +875,26 @@ footer {
 }
 
 .lf-items {
-	width:30%;
+	width: 30%;
 }
 
 .lf-items ul, p {
 	margin: 0;
 }
 
-#lf-items-right  {
+#lf-items-left {
+	/**float: left;**/
+}
+
+#lf-items-right {
 	text-align: end;
 	margin-left: 6%;
+	/**float: right;**/
 }
 
 #lf-items-center {
 	text-align: center;
+	float: left;
 }
 
 #lf-items-right ul {
@@ -891,8 +910,16 @@ footer {
 	margin-left: 2%;
 }
 
-#lf-items-right ul li:nth-last-child(-n+2) {
+#lf-items-right ul li:nth-child(1) {
+	width: 71px;
+}
 
+#lf-items-right ul li:nth-child(2) {
+	width: 90px;
+}
+
+#lf-items-right ul li:nth-child(3) {
+	width: 61px;
 }
 
 #lf-items-right a {
