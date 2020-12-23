@@ -1,14 +1,10 @@
 /* The following jQuery is to make the header (the one we want to pop out) sticky when the user scrolls down the main header. To make this happen, when the if condition is met, we going to add the class="show-fixed" to the header-2 element, so that the header-2 can stay fixed when you scroll down or up below the main header. When you scroll all the way up to the main header, the sticky should disappeared. */
 
 
-
-
-
-
 $(window).scroll(function() {
-		var header = $(document).scrollTop(); /*calculate the height from beginning of page to where ever you stop scrolling */
+		let header = $(document).scrollTop(); /*calculate the height from beginning of page to where ever you stop scrolling */
 
-		var headerHeight = $(".header").outerHeight(); /*calculate main header height */
+		let headerHeight = $(".header").outerHeight(); /*calculate main header height */
 
 /* If scrolling of page is greater than height of main header, then sticky nav will pop up*/
 		if(header > headerHeight) {
@@ -33,9 +29,9 @@ $(window).on("load", function() {
 
 
 function sticky_nav_scroll() {
-		var header = $(document).scrollTop();
+		let header = $(document).scrollTop();
 
-		var headerHeight = $(".header").outerHeight();
+		let headerHeight = $(".header").outerHeight();
 
 		if(header > headerHeight) {
 			$(".header-2").addClass("show-fixed");
@@ -48,8 +44,8 @@ function sticky_nav_scroll() {
 /* The following JS code is to make the carousel or slide mechanism */
 
 
-var slideIndex = 1;
-var timer = null;
+let slideIndex = 1;
+let timer = null;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -63,9 +59,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-	var i;
-	var slides = document.getElementsByClassName("slide");
-	var circles = document.getElementsByClassName("circle");
+	let i;
+	let slides = document.getElementsByClassName("slide");
+	let circles = document.getElementsByClassName("circle");
 
 	if (n == undefined) {
 		n = ++slideIndex
@@ -102,7 +98,7 @@ function showSlides(n) {
 $(document).ready(function(){
 	$("select").change(function(){
 		$(this).find("option:selected").each(function(){
-			var optionValue = $(this).attr("value");
+			let optionValue = $(this).attr("value");
 			if(optionValue){
 				$(".box").not("." + optionValue).hide();
 				$("." + optionValue).show();
