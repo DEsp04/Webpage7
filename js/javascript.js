@@ -48,18 +48,18 @@ let slideIndex = 1;
 let timer = null;
 showSlides(slideIndex);
 
-function plusSlides(n) {
+const plusSlides = (n) => {
 	clearTimeout(timer);
 	showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+const currentSlide = (n) => {
 	clearTimeout(timer);
 	showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-	let i;
+	let i = undefined;
 	let slides = document.getElementsByClassName("slide");
 	let circles = document.getElementsByClassName("circle");
 
