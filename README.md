@@ -11,6 +11,8 @@ This is a one page web application project which contains an unique visual desig
 
 - The carousel can be used to add collection of updates on the school's main events, or articles 
 - The academic section contains 5 boxes where it can be potentially use for redirecting users to a separate page containing content related to the subject.
+- News section has a slide show effect showcasing recent news on the schools activities.
+- Calendar will remind users about the events that is coming up. This section can be updated by going back to the html file and changing the content.
 
 
 
