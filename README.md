@@ -22,6 +22,14 @@ This is a one page web application project which contains an unique visual desig
 
 ![](./web-image/calendar.png)
 
-Webpage has header, main content, and footer.
-I included a carousel and on the news section we have the selection option using JS.
-Calendar section was created and hover effects were added on the nav  li.
+## Requirements:
+
+- Abram Stevens Hewitt application was developed using HTML, CSS and Javascript
+- Flexbox was utilized to lay out the content neatly and efficiently on the web application
+- This web page is responsive on three different screen sizes: desktop, mobile, and tablet. Application will be hosted on Github.
+
+## Inspiration 
+
+Working as a teacher assistant at PS 130, the assistant principal introduced a basic website using Wix.com. After analyzing the design of the webpage, I believe an unique design, similiar to the design used by the ivy league schools' website, could be added to this webpage. Using Columbia's, Princeton's, and Brown's website as inpiration, I created a single webpage to enhace the design used in wix.com.
+
+##### Disclaimer: I do not own the rights to any of the images included in this respository. All images were pulled from Google searches.
