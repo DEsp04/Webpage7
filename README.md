@@ -14,7 +14,13 @@ This is a one page web application project which contains an unique visual desig
 - News section has a slide show effect showcasing recent news on the schools activities.
 - Calendar will remind users about the events that is coming up. This section can be updated by going back to the html file and changing the content.
 
+![](./web-image/carousel.png)
 
+![](./web-image/academics.png)
+
+![](./web-image/news.png)
+
+![](./web-image/calendar.png)
 
 Webpage has header, main content, and footer.
 I included a carousel and on the news section we have the selection option using JS.
